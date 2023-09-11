@@ -1,0 +1,30 @@
+.navbar{
+    height: 5rem;
+}
+.card-sec{
+    justify-content: space-around;
+}
+.cart-icon{
+    color: white;
+    width: 5rem;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.fa-cart-shopping{
+    font-size: 2rem;
+
+}
+.count-span{
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    top: -15%;
+    right: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
