@@ -53,7 +53,8 @@
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
-                <span class="cart-icon">
+                <span class="cart-icon" id="cart_icon" href="#add_to_card_sec" data-bs-toggle="collapse" onclick="calculateTotal()">
+    
                     <i class="fa-solid fa-cart-shopping"></i>
                     <span class="count-span">
                         <p id="count" class="m-0">0</p>
@@ -63,41 +64,28 @@
             </div>
         </div>
     </nav>
-    <section class="container-fluid row card-sec mt-3">
-            <div class="card col-md-4" style="width: 18rem;">
-                <img src="img/macbook.jpeg" class="card-img-top" alt="...">
-                <div class="card-body">
-                <h5 class="card-title">MackBook</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <button onclick="increasecount()" id="add_to_cart" class="btn btn-primary">Add to Card</button>
-                </div>
+    
+         
+    <div class="container-fluid">
+        <div class="row" id="productContainer">
+            <!-- Initial product cards will be added here -->
+        </div>
+    </div>
+    
+    <section class="add_to_card_sec collapse" id="add_to_card_sec">
+        <div class="container-fluid">
+            <div class="row" id="productContainer2">
+                <!-- Selected product cards will be added here -->
             </div>
-            <div class="card col-md-4" style="width: 18rem;">
-                <img src="img/macbook.jpeg" class="card-img-top" alt="...">
-                <div class="card-body">
-                <h5 class="card-title">MackBook</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <button onclick="increasecount()" id="add_to_cart" class="btn btn-primary">Add to Card</button>
-                </div>
-            </div>
-            <div class="card col-md-4" style="width: 18rem;">
-                <img src="img/macbook.jpeg" class="card-img-top" alt="...">
-                <div class="card-body">
-                <h5 class="card-title">MackBook</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <button onclick="increasecount()" id="add_to_cart" class="btn btn-primary">Add to Card</button>
-                </div>
-            </div>
-            <div class="card col-md-4" style="width: 18rem;">
-                <img src="img/macbook.jpeg" class="card-img-top" alt="...">
-                <div class="card-body">
-                <h5 class="card-title">MackBook</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <button onclick="increasecount()" id="add_to_cart" class="btn btn-primary">Add to Card</button>
-                </div>
-            </div>
-            
+        </div>
+        <div class="total text-white" id="total">
+
+        </div>
     </section>
+    
+    
+
+
   </body>
   <script src="script.js"></script>
   <script
